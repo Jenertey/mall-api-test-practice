@@ -1,0 +1,8 @@
+{
+  "code": 200,
+  "message": "操作成功",
+  "data": {
+    "token": "sample-token-for-contract-testing-only",
+    "tokenHead": "Bearer "
+  }
+}

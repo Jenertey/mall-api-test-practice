@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/contracts/login.schema.json",
+  "title": "Mall admin login",
+  "type": "object",
+  "required": ["code", "data"],
+  "properties": {
+    "code": { "const": 200 },
+    "data": {
+      "type": "object",
+      "required": ["token", "tokenHead"],
+      "properties": {
+        "token": { "type": "string", "minLength": 1 },
+        "tokenHead": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

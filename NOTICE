@@ -1,0 +1,13 @@
+Mall API Test Practice
+
+This repository contains an independent test automation project.
+The system under test is Mall:
+
+  https://github.com/macrozheng/mall
+
+Mall is a separate open-source project. Its source code, documentation,
+branding and license remain with its original authors. This project does not
+claim authorship of Mall or of its business implementation.
+
+The test framework, test design and documentation in this repository are
+original work unless a file explicitly says otherwise.

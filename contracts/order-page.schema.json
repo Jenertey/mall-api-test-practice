@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/contracts/order-page.schema.json",
+  "title": "Mall order page",
+  "type": "object",
+  "required": ["code", "data"],
+  "properties": {
+    "code": { "const": 200 },
+    "data": {
+      "type": "object",
+      "required": ["list", "total", "pageNum", "pageSize"],
+      "properties": {
+        "list": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "orderSn", "status"],
+            "properties": {
+              "id": { "type": "integer", "minimum": 1 },
+              "orderSn": { "type": "string", "minLength": 1 },
+              "status": { "type": "integer", "minimum": 0 }
+            },
+            "additionalProperties": true
+          }
+        },
+        "total": { "type": "integer", "minimum": 0 },
+        "pageNum": { "type": "integer", "minimum": 1 },
+        "pageSize": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

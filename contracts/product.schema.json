@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/contracts/product.schema.json",
+  "title": "Mall product summary",
+  "type": "object",
+  "required": ["id", "name", "productSn", "price", "stock"],
+  "properties": {
+    "id": { "type": "integer", "minimum": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "productSn": { "type": "string", "minLength": 1 },
+    "price": { "type": "number", "minimum": 0 },
+    "stock": { "type": "integer", "minimum": 0 }
+  },
+  "additionalProperties": true
+}

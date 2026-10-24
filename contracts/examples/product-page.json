@@ -1,0 +1,18 @@
+{
+  "code": 200,
+  "message": "操作成功",
+  "data": {
+    "list": [
+      {
+        "id": 101,
+        "name": "接口测试商品",
+        "productSn": "MALLTEST-20261024-01",
+        "price": 199.0,
+        "stock": 50
+      }
+    ],
+    "total": 1,
+    "pageNum": 1,
+    "pageSize": 5
+  }
+}

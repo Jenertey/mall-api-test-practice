@@ -1,0 +1,23 @@
+ID,Module,Scenario,Type,Priority,Automated
+MALL-AUTH-001,Auth,管理员使用正确账号登录,Positive,P0,Yes
+MALL-AUTH-002,Auth,管理员使用错误密码登录,Negative,P0,Yes
+MALL-AUTH-003,Auth,未登录访问商品列表,Permission,P0,Yes
+MALL-PRD-001,Product,商品列表返回分页字段,Contract,P0,Yes
+MALL-PRD-002,Product,pageSize=1 的边界分页,Contract,P1,Yes
+MALL-PRD-003,Product,商品简单列表返回 id 和 name,Contract,P1,Yes
+MALL-PRD-004,Product,创建商品后可读取详情,CRUD,P1,Yes
+MALL-PRD-005,Product,测试商品可被清理,CRUD,P1,Yes
+MALL-ORD-001,Order,订单列表返回分页字段,Contract,P0,Yes
+MALL-ORD-002,Order,订单列表按状态筛选,Contract,P1,Yes
+MALL-ORD-003,Order,订单详情字段完整,Contract,P1,No
+MALL-ORD-004,Order,不存在的订单返回错误,Negative,P2,No
+MALL-DB-001,Database,商品库存不为负数,Data,P0,Yes
+MALL-DB-002,Database,SKU 库存和锁定库存不为负数,Data,P0,Yes
+MALL-FRM-001,Framework,商品工厂生成唯一 SKU,Unit,P1,Yes
+MALL-FRM-002,Framework,商品响应结构断言,Unit,P1,Yes
+MALL-AUTH-004,Auth,连续使用错误密码登录不会泄露内部错误,Negative,P2,No
+MALL-PRD-006,Product,商品名称为空时创建失败,Negative,P1,No
+MALL-PRD-007,Product,商品价格为 0 或负数时创建失败,Negative,P1,No
+MALL-ORD-005,Order,订单列表 pageSize=1 的边界分页,Contract,P2,No
+MALL-PRD-008,Product,商品简单列表使用无匹配关键字时返回空数组,Contract,P2,No
+MALL-ORD-006,Order,订单列表使用非法状态时返回受控错误或空列表,Negative,P2,No
