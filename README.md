@@ -1,5 +1,7 @@
 # Mall 商城接口自动化测试练习
 
+GitHub：[Jenertey/mall-api-test-practice](https://github.com/Jenertey/mall-api-test-practice)
+
 这是一个面向软件测试实习岗位的个人练习项目。我从测试设计、接口封装、数据准备、契约校验到持续集成，独立完成了一套可运行的接口测试工程；被测系统是开源项目 [macrozheng/mall](https://github.com/macrozheng/mall)。
 
 > 本项目不包含 Mall 源码，也不代表 Mall 作者。Mall 的代码、接口和业务规则归上游作者所有。这里展示的是我独立编写的测试框架与测试资产。
